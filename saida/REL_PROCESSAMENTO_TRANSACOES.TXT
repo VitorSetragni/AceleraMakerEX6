@@ -1,0 +1,7 @@
+RELATORIO DE PROCESSAMENTO - TRANSACOES
+=======================================
+TOTAL LIDOS:            9
+TOTAL PROCESSADOS:      5
+TOTAL COM ERRO:         4
+TOTAL CREDITOS:         3
+TOTAL DEBITOS:          2

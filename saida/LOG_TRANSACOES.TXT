@@ -1,0 +1,3 @@
+INICIO DO PROCESSAMENTO DE TRANSACOES
+DB2: Conexao com DB2 realizada com sucesso
+DB2 FINAL TRANSACOES: COMMIT executado com sucesso

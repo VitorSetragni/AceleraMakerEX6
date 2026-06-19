@@ -1,0 +1,5 @@
+INICIO DO RELATORIO FINAL CONSULTANDO O DB2
+DB2: Conexao com DB2 realizada com sucesso
+DB2: Relatorio final de clientes gerado
+DB2: Relatorio final de erros gerado
+FIM DO RELATORIO FINAL

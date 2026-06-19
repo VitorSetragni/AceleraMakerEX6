@@ -1,0 +1,7 @@
+RELATORIO FINAL - ERROS REGISTRADOS NO DB2
+==========================================
+ID_ERRO  CLI_ID   ERRO                                DATA
+00000001 00123    TIPO INVALIDO                       2026-06-19 20:39:02
+00000002 00123    VALOR ZERADO                        2026-06-19 20:39:02
+00000003 00789    SALDO INSUFICIENTE                  2026-06-19 20:39:02
+00000004 11111    CLIENTE INEXISTENTE                 2026-06-19 20:39:02

@@ -1,0 +1,7 @@
+RELATORIO FINAL - CLIENTES NO DB2
+================================
+CLI_ID   NOME                                  SALDO
+00123    JOAO SILVA                            10300
+00456    MARIA SOUZA ATUALIZADA                25250
+00789    CARLOS PEREIRA                         5000
+00999    CLIENTE SEM NOME                        800
