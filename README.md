@@ -118,12 +118,20 @@ Tipos usados:
 
 ```text
 C = crédito / depósito
-D = débito / saque
+D = débito / saque 
 ```
-##Evidências da execução
+## Evidências da execução
+
+
 <img width="594" height="178" alt="clientes_db2" src="https://github.com/user-attachments/assets/e4c581bf-00af-4d74-bab9-88ce35e3bcde" />
+
+
 <img width="2048" height="289" alt="erros_db2" src="https://github.com/user-attachments/assets/ba4b2b46-d2e7-4b64-8896-945a483cafe2" />
+
+
 <img width="563" height="241" alt="transacoes_db2" src="https://github.com/user-attachments/assets/112571e3-bf3e-4af1-b858-f5d1d7a86a95" />
+
+
 <img width="2048" height="731" alt="historico_db2" src="https://github.com/user-attachments/assets/005b19f1-66a3-460c-9eab-7c87f2c1e95e" />
 
 
