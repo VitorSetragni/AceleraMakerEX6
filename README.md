@@ -5,12 +5,12 @@ Projeto 6 COBOL - Sistema de Contas Bancárias com **OpenCOBOL/GnuCOBOL**, **C**
 Este projeto não usa TK5, TSO ou JCL real. O fluxo foi adaptado para ambiente local:
 
 ```text
-COBOL -> CALL em C -> DB2 CLI/ODBC -> DB2 no Docker
+COBOL -> C -> DB2 CLI/ODBC -> DB2 no Docker
 ```
 
 ## Fluxo do projeto
 
-Nesta versão, as tabelas e os dados iniciais são preparados manualmente no DB2 pelo script SQL:
+Nesta versão, as tabelas e os dados iniciais são preparados no DB2 pelo script SQL:
 
 ```text
 sql/00_preparar_tabelas_e_clientes_manuais.sql
@@ -20,8 +20,6 @@ Esse script cria e popula:
 
 - `CLIENTES`
 - `TRANSACOES`
-- `ERROS_PROCESSAMENTO`
-- `HISTORICO_TRANSACOES`
 
 Depois disso, o COBOL:
 
@@ -72,7 +70,7 @@ O GnuCOBOL, GCC e o driver DB2 CLI são instalados dentro do container da aplica
 ## Como executar
 
 ```bash
-cd ~/Downloads/AceleraMakerEX6
+cd ~caminho_para_o_diretorio/AceleraMakerEX6
 chmod +x scripts/*.sh
 
 docker compose down -v --remove-orphans
@@ -123,17 +121,3 @@ C = crédito / depósito
 D = débito / saque
 ```
 
-## Observação sobre o JCL
-
-O enunciado original cita JCL por considerar ambiente mainframe. Nesta versão local, os scripts `.sh` cumprem esse papel operacional:
-
-```text
-JCL / SORT        -> scripts/ordenar_arquivos.sh
-EXEC PGM          -> scripts/executar_processamento_manual.sh
-Preparação DB2    -> scripts/preparar_banco_manual.sh
-Consulta final    -> scripts/consultar_banco.sh
-```
-
-## Como explicar na entrega
-
-O COBOL ficou responsável pela leitura do arquivo, validações, regras de negócio, contadores e relatórios. A linguagem C foi usada apenas como ponte para conectar ao DB2 e executar comandos SQL com o driver CLI/ODBC da IBM.
